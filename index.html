@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>xplr</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header container">
+            <div class="account">
+                <img src="./img/Avatar.jpg" alt="" class="account__img">
+            </div>
+            <div class="notification">
+                <svg class="notification__img" width="16" height="20" viewBox="0 0 16 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8 20C9.1 20 10 19.1 10 18H6C6 19.1 6.9 20 8 20ZM14 14V9C14 5.93 12.37 3.36 9.5 2.68V0.5H6.5V2.68C3.64 3.36 2 5.92 2 9V14L0 16V17H16V16L14 14ZM12 15H4V9C4 6.52 5.51 4.5 8 4.5C10.49 4.5 12 6.52 12 9V15Z"
+                        fill="#434244" />
+                </svg>
+            </div>
+        </header>
+        <main class="main">
+            <section class="search-engine container">
+                <h3 class="search-engine__title">
+                    Привет, Кристиан!
+                </h3>
+                <p class="search-engine__text">
+                    Куда отправимся сегодня?
+                </p>
+                <form action="" method="get" class="search-bar search-engine__search-bar">
+                    <svg class="search-bar__img" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.33333 7.33333H7.80667L7.62 7.15333C8.27333 6.39333 8.66667 5.40667 8.66667 4.33333C8.66667 1.94 6.72667 0 4.33333 0C1.94 0 0 1.94 0 4.33333C0 6.72667 1.94 8.66667 4.33333 8.66667C5.40667 8.66667 6.39333 8.27333 7.15333 7.62L7.33333 7.80667V8.33333L10.6667 11.66L11.66 10.6667L8.33333 7.33333ZM4.33333 7.33333C2.67333 7.33333 1.33333 5.99333 1.33333 4.33333C1.33333 2.67333 2.67333 1.33333 4.33333 1.33333C5.99333 1.33333 7.33333 2.67333 7.33333 4.33333C7.33333 5.99333 5.99333 7.33333 4.33333 7.33333Z"
+                            fill="#434244" fill-opacity="0.5" />
+                    </svg>
+
+                    <input type="search" class="search-bar__input" placeholder="Поиск">
+                    <button class="search-bar__button">
+                        <svg class="search-bar__button__img" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66667 8H7.33333V6.66667H4.66667V8ZM0 0V1.33333H12V0H0ZM2 4.66667H10V3.33333H2V4.66667Z"
+                                fill="#434244" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="filters">
+                    <form action="" method="get" class="search-bar filters__search-bar">
+                        <div class="filters-search-wrap">
+                            <svg class="search-bar__img" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.33333 7.33333H7.80667L7.62 7.15333C8.27333 6.39333 8.66667 5.40667 8.66667 4.33333C8.66667 1.94 6.72667 0 4.33333 0C1.94 0 0 1.94 0 4.33333C0 6.72667 1.94 8.66667 4.33333 8.66667C5.40667 8.66667 6.39333 8.27333 7.15333 7.62L7.33333 7.80667V8.33333L10.6667 11.66L11.66 10.6667L8.33333 7.33333ZM4.33333 7.33333C2.67333 7.33333 1.33333 5.99333 1.33333 4.33333C1.33333 2.67333 2.67333 1.33333 4.33333 1.33333C5.99333 1.33333 7.33333 2.67333 7.33333 4.33333C7.33333 5.99333 5.99333 7.33333 4.33333 7.33333Z"
+                                    fill="#434244" fill-opacity="0.5" />
+                            </svg>
+                            <input type="search" class="search-bar__input" placeholder="Поиск">
+                        </div>
+
+                        <div class="filters__list">
+                            <div class="filters__element">
+                                <span class="filters__name">
+                                    расстояние (в км)
+                                </span>
+                                <div class="filters__input-wrap">
+                                    <input type="text" class="filters__input" placeholder="от">
+                                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.36 1.291V0.203H10.56V1.291H0.36Z" fill="#434244" />
+                                    </svg>
+
+                                    <input type="text" class="filters__input" placeholder="до">
+                                </div>
+                            </div>
+                            <div class="filters__element">
+                                <span class="filters__name">
+                                    длительность (в мин)
+                                </span>
+                                <div class="filters__input-wrap">
+                                    <input type="text" class="filters__input" placeholder="от">
+                                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.36 1.291V0.203H10.56V1.291H0.36Z" fill="#434244" />
+                                    </svg>
+                            
+                                    <input type="text" class="filters__input" placeholder="до">
+                                </div>
+                            </div>
+                            <div class="filters__element">
+                                <span class="filters__name">
+                                    рейтинг
+                                </span>
+                                <div class="filters__input-wrap">
+                                    <input type="text" class="filters__input" placeholder="от">
+                                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.36 1.291V0.203H10.56V1.291H0.36Z" fill="#434244" />
+                                    </svg>
+                            
+                                    <input type="text" class="filters__input" placeholder="до">
+                                </div>
+                            </div>
+                            <div class="filters__element">
+                                <span class="filters__name">
+                                    тип мест
+                                </span>
+                                <div class="filters__input-wrap">
+                                    <select name="" class="filters__input filters__input_select">
+                                        <option value="">улицы</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="filters__element">
+                                <span class="filters__name">
+                                    наличие экскурсовода
+                                </span>
+                                <div class="filters__input-wrap">
+                                    <input type="checkbox" class="checkbox" id="box" />
+                                    <label for="box"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="search-bar__button">
+                            <svg class="search-bar__button__img" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66667 8H7.33333V6.66667H4.66667V8ZM0 0V1.33333H12V0H0ZM2 4.66667H10V3.33333H2V4.66667Z"
+                                    fill="#434244" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section class="routes container">
+                <ul class="routes_list">
+                    <li class="routes__element">
+                        <div class="routes__element_unactive">
+                            <div class="img-wrap routes__img-wrap">
+                                <img src="./img/Picture Area.jpg" alt="" class="img-wrap__img">
+                                <div class="img-wrap__grade">
+                                    <div class="img-wrap__like">
+                                        <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                fill="#434244" />
+                                        </svg>
+                                        <span class="img-wrap__span">4,8</span>
+                                    </div>
+                                    <div class="img-wrap__bookmark">
+                                        <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                fill="#434244" />
+                                        </svg>
+                                        <span class="img-wrap__span">24</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="routes__title">Дворцовый Петербург</h2>
+                            <p class="routes__text">Величие города на Неве прямо перед вами</p>
+                        </div>
+                        <div class="routes__element_active container">
+                            <!-- SLider -->
+                            <div class="routes__element_active__top-part">
+                                <span class="routes__element_active__name">Дворцовый Петербург</span>
+                                <p class="routes__element_active__description">
+                                    Величие города на Неве прямо перед вами
+                                </p>
+                            </div>
+                            <img src="./img/close.svg" alt="" class="routes__element_active__close">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="route-path">
+                                <!-- Карта -->
+                        
+                                <p class="route-path__text">
+                                    На этой экскурсии вы узнаете о тёмной стороне жизни Северной столицы! Речь пойдет о знаменитой торговой
+                                    Сенной площади,
+                                    – «Чрева Петербурга», - которая долгое время была одним из наиболее криминальных и неблагоприятных мест
+                                    нашего города.
+                                </p>
+                                <a href="" class="route-path__btn btn-dark">
+                                    <div class="route-path__btn__wrap">
+                                        <span>Подробнее</span>
+                                        <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
+                                        </svg>
+                                    </div>
+                        
+                                </a>
+                            </div>
+                            <div class="reviews">
+                                <div class="reviews__top-part">
+                                    <span class="reviews__description">
+                                        Оценки и отзывы
+                                    </span>
+                                    <span class="reviews__rating">
+                                        4,8
+                                    </span>
+                                </div>
+                                <a href="#" class="btn-dark reviews__button">
+                                    Добавить отзыв
+                                </a>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-1.jpg" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Татьяна Маркова</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nam soluta asperiores quam libero
+                                        maiores, hic, doloremque incidunt natus veritatis ducimus deserunt veniam debitis ut omnis impedit
+                                        repellat recusandae rerum voluptatem culpa quidem? Amet esse asperiores sint eaque aliquam, illo facilis
+                                        debitis reprehenderit suscipit veniam quis, quo ipsam. Fugiat quam maiores recusandae officiis ea
+                                        temporibus deleniti unde quis architecto sint, sapiente ad eligendi a explicabo consequatur quisquam
+                                        odit expedita est hic porro eos perferendis suscipit nulla numquam. Ipsum quas tempora neque soluta
+                                        molestiae eum repellat? Dolore similique, animi reiciendis laboriosam suscipit ullam asperiores odio
+                                        reprehenderit eos quae officiis, maxime recusandae.
+                                    </p>
+                                </div>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-2.png" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Алексей Ставицкий</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-unactive.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Экскурсия очень понравилась, за 3 часа увидели много красивых мест, гид Анастасия ооочень интересно
+                                        рассказывала
+                                    </p>
+                                </div>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-3.png" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Вадим Мельников</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-unactive.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Очень понравилась экскурсия. Гид - приятная женщина, вела экскурсию интересно, "без воды". Только
+                                        интересные факты. Эта
+                                        экскурсия подойдет для первого знакомства с Москвой, гид дает рекомендации, какие места интересно
+                                        посетить с более
+                                        подробными экскурсиями. 3 часа пролетели незаметно!
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </li>
+                    <li class="routes__element">
+                        <div class="routes__element_unactive">
+                            <div class="img-wrap routes__img-wrap">
+                                <img src="./img/Picture Area-2.jpg" alt="" class="img-wrap__img">
+                                <div class="img-wrap__grade">
+                                    <div class="img-wrap__like">
+                                        <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                fill="#434244" />
+                                        </svg>
+                                        <span class="img-wrap__span">4,8</span>
+                                    </div>
+                                    <div class="img-wrap__bookmark">
+                                        <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                fill="#434244" />
+                                        </svg>
+                                        <span class="img-wrap__span">24</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="routes__title">Парадные, которые удивят</h2>
+                            <p class="routes__text">Величие города на Неве прямо перед вами</p>
+                        </div>
+                        <div class="routes__element_active container">
+                            <!-- SLider -->
+                            <div class="routes__element_active__top-part">
+                                <span class="routes__element_active__name">Парадные, которые удивят</span>
+                                <p class="routes__element_active__description">
+                                    Величие города на Неве прямо перед вами
+                                </p>
+                            </div>
+                            <img src="./img/close.svg" alt="" class="routes__element_active__close">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="route-path">
+                                <!-- Карта -->
+                        
+                                <p class="route-path__text">
+                                    На этой экскурсии вы узнаете о тёмной стороне жизни Северной столицы! Речь пойдет о знаменитой торговой
+                                    Сенной площади,
+                                    – «Чрева Петербурга», - которая долгое время была одним из наиболее криминальных и неблагоприятных мест
+                                    нашего города.
+                                </p>
+                                <a href="" class="route-path__btn btn-dark">
+                                    <div class="route-path__btn__wrap">
+                                        <span>Подробнее</span>
+                                        <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
+                                        </svg>
+                                    </div>
+                        
+                                </a>
+                            </div>
+                            <div class="reviews">
+                                <div class="reviews__top-part">
+                                    <span class="reviews__description">
+                                        Оценки и отзывы
+                                    </span>
+                                    <span class="reviews__rating">
+                                        4,8
+                                    </span>
+                                </div>
+                                <a href="#" class="btn-dark reviews__button">
+                                    Добавить отзыв
+                                </a>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-1.jpg" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Татьяна Маркова</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nam soluta asperiores quam libero
+                                        maiores, hic, doloremque incidunt natus veritatis ducimus deserunt veniam debitis ut omnis impedit
+                                        repellat recusandae rerum voluptatem culpa quidem? Amet esse asperiores sint eaque aliquam, illo facilis
+                                        debitis reprehenderit suscipit veniam quis, quo ipsam. Fugiat quam maiores recusandae officiis ea
+                                        temporibus deleniti unde quis architecto sint, sapiente ad eligendi a explicabo consequatur quisquam
+                                        odit expedita est hic porro eos perferendis suscipit nulla numquam. Ipsum quas tempora neque soluta
+                                        molestiae eum repellat? Dolore similique, animi reiciendis laboriosam suscipit ullam asperiores odio
+                                        reprehenderit eos quae officiis, maxime recusandae.
+                                    </p>
+                                </div>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-2.png" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Алексей Ставицкий</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-unactive.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Экскурсия очень понравилась, за 3 часа увидели много красивых мест, гид Анастасия ооочень интересно
+                                        рассказывала
+                                    </p>
+                                </div>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-3.png" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Вадим Мельников</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-unactive.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Очень понравилась экскурсия. Гид - приятная женщина, вела экскурсию интересно, "без воды". Только
+                                        интересные факты. Эта
+                                        экскурсия подойдет для первого знакомства с Москвой, гид дает рекомендации, какие места интересно
+                                        посетить с более
+                                        подробными экскурсиями. 3 часа пролетели незаметно!
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </li>
+                    <li class="routes__element">
+                        <div class="routes__element_unactive">
+                            <div class="img-wrap routes__img-wrap">
+                                <img src="./img/Picture Area-3.jpg" alt="" class="img-wrap__img">
+                                <div class="img-wrap__grade">
+                                    <div class="img-wrap__like">
+                                        <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                fill="#434244" />
+                                        </svg>
+                                        <span class="img-wrap__span">4,8</span>
+                                    </div>
+                                    <div class="img-wrap__bookmark">
+                                        <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                fill="#434244" />
+                                        </svg>
+                                        <span class="img-wrap__span">24</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="routes__title">Улицы разбитых фонарей</h2>
+                            <p class="routes__text">Тихие улочки, покрытые тайнами прошлого</p>
+                        </div>
+
+                        <div class="routes__element_active container">
+                            <!-- SLider -->
+                            <div class="routes__element_active__top-part">
+                                <span class="routes__element_active__name">Улицы разбитых фонарей</span>
+                                <p class="routes__element_active__description">
+                                    Тихие улочки, покрытые тайнами прошлого
+                                </p>
+                            </div>
+                            <img src="./img/close.svg" alt="" class="routes__element_active__close">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-wrap slider__img-wrap">
+                                            <img src="./img/slider-1.jpg" alt="" class="img-wrap__img">
+                                            <div class="img-wrap__grade">
+                                                <div class="img-wrap__like">
+                                                    <svg class="img-wrap__like__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.6667 6.15998L9.87337 5.74665L8.00004 1.33331L6.12671 5.75331L1.33337 6.15998L4.97337 9.31331L3.88004 14L8.00004 11.5133L12.12 14L11.0334 9.31331L14.6667 6.15998ZM8.00004 10.2666L5.49337 11.78L6.16004 8.92665L3.94671 7.00665L6.86671 6.75331L8.00004 4.06665L9.14004 6.75998L12.06 7.01331L9.84671 8.93331L10.5134 11.7866L8.00004 10.2666Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">4,8</span>
+                                                </div>
+                                                <div class="img-wrap__bookmark">
+                                                    <svg class="img-wrap__bookmark__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.6667 2H3.34004L3.33337 14L8.00004 12L12.6667 14V2ZM11.3334 12L8.00004 10.5467L4.66671 12V3.33333H11.3334V12Z"
+                                                            fill="#434244" />
+                                                    </svg>
+                                                    <span class="img-wrap__span">24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="route-path">
+                                <!-- Карта -->
+
+                                <p class="route-path__text">
+                                    На этой экскурсии вы узнаете о тёмной стороне жизни Северной столицы! Речь пойдет о знаменитой торговой Сенной площади,
+                                    – «Чрева Петербурга», - которая долгое время была одним из наиболее криминальных и неблагоприятных мест нашего города.
+                                </p>
+                                <a href="" class="route-path__btn btn-dark">
+                                    <div class="route-path__btn__wrap">
+                                        <span>Подробнее</span>
+                                        <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
+                                        </svg>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="reviews">
+                                <div class="reviews__top-part">
+                                        <span class="reviews__description">
+                                            Оценки и отзывы
+                                        </span>
+                                        <span class="reviews__rating">
+                                            4,8
+                                        </span>
+                                </div>
+                                <a href="#" class="btn-dark reviews__button">
+                                    Добавить отзыв
+                                </a>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-1.jpg" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Татьяна Маркова</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nam soluta asperiores quam libero maiores, hic, doloremque incidunt natus veritatis ducimus deserunt veniam debitis ut omnis impedit repellat recusandae rerum voluptatem culpa quidem? Amet esse asperiores sint eaque aliquam, illo facilis debitis reprehenderit suscipit veniam quis, quo ipsam. Fugiat quam maiores recusandae officiis ea temporibus deleniti unde quis architecto sint, sapiente ad eligendi a explicabo consequatur quisquam odit expedita est hic porro eos perferendis suscipit nulla numquam. Ipsum quas tempora neque soluta molestiae eum repellat? Dolore similique, animi reiciendis laboriosam suscipit ullam asperiores odio reprehenderit eos quae officiis, maxime recusandae.
+                                    </p>
+                                </div>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-2.png" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Алексей Ставицкий</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-unactive.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Экскурсия очень понравилась, за 3 часа увидели много красивых мест, гид Анастасия ооочень интересно рассказывала
+                                    </p>
+                                </div>
+                                <div class="review reviews__review">
+                                    <div class="review__top-part">
+                                        <img src="./img/review-3.png" alt="" class="review__avatar">
+                                        <div class="review__name-and-rate">
+                                            <span class="review__name">Вадим Мельников</span>
+                                            <div class="review__rate">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-active.svg" alt="" class="review_star">
+                                                <img src="./img/star-unactive.svg" alt="" class="review_star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__text">
+                                        Очень понравилась экскурсия. Гид - приятная женщина, вела экскурсию интересно, "без воды". Только интересные факты. Эта
+                                        экскурсия подойдет для первого знакомства с Москвой, гид дает рекомендации, какие места интересно посетить с более
+                                        подробными экскурсиями. 3 часа пролетели незаметно!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__element">
+                            <a href="#" class="menu__link">
+                                <svg class="menu__img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.6667 10.6667H8V22.6667H22.6667V20H10.6667V10.6667Z" fill="white" />
+                                    <path d="M29.3335 4H13.3335V17.3333H29.3335V4ZM26.6668 14.6667H16.0002V9.33333H26.6668V14.6667Z" fill="white" />
+                                    <path d="M5.33341 16H2.66675V28H17.3334V25.3333H5.33341V16Z" fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="menu__element">
+                            <a href="#" class="menu__link">
+                                <svg class="menu__img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 6.80003L12 4.00003L4 6.69336V28.2934L12 25.1867L20 27.9867L28 25.2934V3.69336L20 6.80003ZM20 25.1867L12 22.3734V6.81336L20 9.62669V25.1867Z"
+                                        fill="#434244" fill-opacity="0.5" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__element">
+                            <a href="" class="menu__link">
+                                <svg class="menu__img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.6667 0H5.33341V2.66667H26.6667V0ZM5.33341 32H26.6667V29.3333H5.33341V32ZM29.3334 5.33333H2.66675V26.6667H29.3334V5.33333ZM16.0001 9C17.6534 9 19.0001 10.3467 19.0001 12C19.0001 13.6533 17.6534 15 16.0001 15C14.3467 15 13.0001 13.6533 13.0001 12C13.0001 10.3467 14.3467 9 16.0001 9ZM22.6667 22.6667H9.33342V20.6667C9.33342 18.44 13.7734 17.3333 16.0001 17.3333C18.2267 17.3333 22.6667 18.44 22.6667 20.6667V22.6667Z"
+                                        fill="#434244" fill-opacity="0.5" />
+                                </svg>
+                            </a>
+                
+                        </li>
+                        <li class="menu__element">
+                            <a href="" class="menu__link">
+                                <svg class="menu__img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.33329 8.00002H2.66663V29.3334H24V26.6667H5.33329V8.00002ZM29.3333 2.66669H7.99996V24H29.3333V2.66669ZM25.3333 14.6667H20V20H17.3333V14.6667H12V12H17.3333V6.66669H20V12H25.3333V14.6667Z"
+                                        fill="#434244" fill-opacity="0.5" />
+                                </svg>
+                            </a>
+
+                
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    </script>
+</body>
+</html>
