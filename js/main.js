@@ -13,16 +13,16 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         })
     })
-    document.querySelectorAll('.routes__element').forEach((element)=>{
+    document.querySelectorAll('.routes__element_unactive').forEach((element)=>{
         element.addEventListener('click',(event)=>{
             if(event.__isOnClick){
                 return
             }
-            window.scrollTo(pageYOffset,0);
+            window.scrollTo(scrollY,0);
             document.querySelectorAll('.routes__element_unactive').forEach((listElement=>{
                 listElement.classList.add('display_none');
             }))
-            element.querySelector('.routes__element_active').classList.add('routes__element_active_onClick')
+            element.parentNode.querySelector('.routes__element_active').classList.add('routes__element_active_onClick')
         })
     })
 
@@ -34,4 +34,20 @@ document.addEventListener("DOMContentLoaded",()=>{
             document.querySelector('.filters__search-bar').classList.toggle('display_block');
         })
     })
+
+    document.querySelectorAll('.route-path__btn').forEach((element)=>{
+        element.addEventListener('click',(e)=>{
+            e.preventDefault()
+            element.parentNode.querySelector('.route-path__description').classList.add('display_block')
+            element.classList.add('display_none');
+        })
+    })
+    document.querySelectorAll('.route-path__btn_active').forEach((element)=>{
+        element.addEventListener('click',(e)=>{
+            e.preventDefault()
+            element.parentNode.classList.remove('display_block')
+            element.parentNode.parentNode.querySelector('.route-path__btn').classList.remove('display_none');
+        })
+    })
 })
+

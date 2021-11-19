@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <title>xplr</title>
 </head>
 <body>
@@ -119,6 +120,7 @@
                                     <label for="box"></label>
                                 </div>
                             </div>
+                            <a href="#" class="btn-dark filters__btn-dark">Поиск</a>
                         </div>
                         <button class="search-bar__button">
                             <svg class="search-bar__button__img" width="12" height="8" viewBox="0 0 12 8" fill="none"
@@ -301,14 +303,17 @@
                             </div>
                             <div class="route-path">
                                 <!-- Карта -->
-                        
+                                <div class="map-wrap">
+                                    <div id="map" style="width: 366px; height: 192px"></div>
+                                    <a href="" class="btn-dark map-wrap_btn">В путь</a>
+                                </div>
                                 <p class="route-path__text">
                                     На этой экскурсии вы узнаете о тёмной стороне жизни Северной столицы! Речь пойдет о знаменитой торговой
                                     Сенной площади,
                                     – «Чрева Петербурга», - которая долгое время была одним из наиболее криминальных и неблагоприятных мест
                                     нашего города.
                                 </p>
-                                <a href="" class="route-path__btn btn-dark">
+                                <button class="route-path__btn btn-dark">
                                     <div class="route-path__btn__wrap">
                                         <span>Подробнее</span>
                                         <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
@@ -316,8 +321,44 @@
                                             <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
                                         </svg>
                                     </div>
-                        
-                                </a>
+                                </button>
+                                <div class="route-path__description">
+                                    <div class="swiper swiper-longer">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="route-path__text">
+                                        В компании с опытным экскурсоводом мы пройдемся по местам самых громких преступлений конца XIX и начала XX века,
+                                        оставивших след в истории города со времен Достоевского, ещё при Царской России, и позже, при Советской власти.
+                                        Прогуляемся по интересным и порою немного страшным закоулкам и дворам Сенной площади.
+                                    </p>
+                                    <div class="swiper swiper-longer">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="route-path__text route-path__text_last">
+                                        Вы узнаете о первых кабаках, местных борделях, ночлежных и доходных домах, жизни петербургских «мазуриков», «воровских
+                                        малинах» и наиболее известных бандах, ликвидированных УгРо Петрограда, а также о знаменитых сыщиках следственного
+                                        отдела.
+                                    </p>
+                                    <button class="route-path__btn route-path__btn_active btn-dark">
+                                        <div class="route-path__btn__wrap">
+                                            <span>Скрыть описание</span>
+                                            <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                             <div class="reviews">
                                 <div class="reviews__top-part">
@@ -570,14 +611,17 @@
                             </div>
                             <div class="route-path">
                                 <!-- Карта -->
-                        
+                                <div class="map-wrap">
+                                    <div id="map-1" style="width: 366px; height: 192px"></div>
+                                    <a href="" class="btn-dark map-wrap_btn">В путь</a>
+                                </div>
                                 <p class="route-path__text">
                                     На этой экскурсии вы узнаете о тёмной стороне жизни Северной столицы! Речь пойдет о знаменитой торговой
                                     Сенной площади,
                                     – «Чрева Петербурга», - которая долгое время была одним из наиболее криминальных и неблагоприятных мест
                                     нашего города.
                                 </p>
-                                <a href="" class="route-path__btn btn-dark">
+                                <button class="route-path__btn btn-dark">
                                     <div class="route-path__btn__wrap">
                                         <span>Подробнее</span>
                                         <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
@@ -585,8 +629,46 @@
                                             <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
                                         </svg>
                                     </div>
-                        
-                                </a>
+                                </button>
+                                <div class="route-path__description">
+                                    <div class="swiper swiper-longer">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="route-path__text">
+                                        В компании с опытным экскурсоводом мы пройдемся по местам самых громких преступлений конца XIX и начала XX века,
+                                        оставивших след в истории города со времен Достоевского, ещё при Царской России, и позже, при Советской власти.
+                                        Прогуляемся по интересным и порою немного страшным закоулкам и дворам Сенной площади.
+                                    </p>
+                                    <div class="swiper swiper-longer">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="route-path__text route-path__text_last">
+                                        Вы узнаете о первых кабаках, местных борделях, ночлежных и доходных домах, жизни петербургских «мазуриков»,
+                                        «воровских
+                                        малинах» и наиболее известных бандах, ликвидированных УгРо Петрограда, а также о знаменитых сыщиках
+                                        следственного
+                                        отдела.
+                                    </p>
+                                    <button class="route-path__btn route-path__btn_active btn-dark">
+                                        <div class="route-path__btn__wrap">
+                                            <span>Скрыть описание</span>
+                                            <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                             <div class="reviews">
                                 <div class="reviews__top-part">
@@ -841,20 +923,97 @@
                             </div>
                             <div class="route-path">
                                 <!-- Карта -->
-
+                                <div class="map-wrap">
+                                    <div id="map-2" style="width: 366px; height: 192px"></div>
+                                    <a href="" class="btn-dark map-wrap_btn">В путь</a>
+                                </div>
                                 <p class="route-path__text">
                                     На этой экскурсии вы узнаете о тёмной стороне жизни Северной столицы! Речь пойдет о знаменитой торговой Сенной площади,
                                     – «Чрева Петербурга», - которая долгое время была одним из наиболее криминальных и неблагоприятных мест нашего города.
                                 </p>
-                                <a href="" class="route-path__btn btn-dark">
+                                <button class="route-path__btn btn-dark">
                                     <div class="route-path__btn__wrap">
                                         <span>Подробнее</span>
-                                        <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
                                         </svg>
                                     </div>
-
-                                </a>
+                                </button>
+                                <div class="route-path__description">
+                                    <div class="swiper swiper-longer">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="route-path__text">
+                                        В компании с опытным экскурсоводом мы пройдемся по местам самых громких преступлений конца XIX и начала XX века,
+                                        оставивших след в истории города со времен Достоевского, ещё при Царской России, и позже, при Советской власти.
+                                        Прогуляемся по интересным и порою немного страшным закоулкам и дворам Сенной площади.
+                                    </p>
+                                    <div class="swiper swiper-longer">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="route-path__text route-path__text_last">
+                                        Вы узнаете о первых кабаках, местных борделях, ночлежных и доходных домах, жизни петербургских «мазуриков», «воровских
+                                        малинах» и наиболее известных бандах, ликвидированных УгРо Петрограда, а также о знаменитых сыщиках следственного
+                                        отдела.
+                                    </p>
+                                    <button class="route-path__btn route-path__btn_active btn-dark">
+                                        <div class="route-path__btn__wrap">
+                                            <span>Скрыть описание</span>
+                                            <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="route-path__description">
+                                        <div class="swiper swiper-longer">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                                <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                                <div class="swiper-slide"><img src="./img/swiper-1.jpg" alt=""></div>
+                                                <div class="swiper-slide"><img src="./img/swiper-2.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <p class="route-path__text">
+                                            В компании с опытным экскурсоводом мы пройдемся по местам самых громких преступлений конца XIX и начала XX века,
+                                            оставивших след в истории города со времен Достоевского, ещё при Царской России, и позже, при Советской власти.
+                                            Прогуляемся по интересным и порою немного страшным закоулкам и дворам Сенной площади.
+                                        </p>
+                                        <div class="swiper swiper-longer">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                                <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                                <div class="swiper-slide"><img src="./img/swiper-3.jpg" alt=""></div>
+                                                <div class="swiper-slide"><img src="./img/swiper-4.jpg" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <p class="route-path__text route-path__text_last">
+                                            Вы узнаете о первых кабаках, местных борделях, ночлежных и доходных домах, жизни петербургских «мазуриков», «воровских
+                                            малинах» и наиболее известных бандах, ликвидированных УгРо Петрограда, а также о знаменитых сыщиках следственного
+                                            отдела.
+                                        </p>
+                                        <button class="route-path__btn route-path__btn_active btn-dark">
+                                            <div class="route-path__btn__wrap">
+                                                <span>Скрыть описание</span>
+                                                <svg class="route-path__btn__svg" width="11" height="5" viewBox="0 0 11 5" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.5 0L5.5 5L10.5 0H0.5Z" fill="#434244" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="reviews">
                                 <div class="reviews__top-part">
@@ -988,24 +1147,45 @@
         </footer>
     </div>
 
-
-
-
-
-
-
-
     <script>
     const swiper = new Swiper('.swiper', {
-        // Optional parameters
+        
         direction: 'horizontal',
         loop: true,
-        // If we need pagination
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
         },
     });
+    const secondSwiper = new Swiper('.swiper-longer', {
+            
+        direction: 'horizontal',
+        slidesPerView: 1.8,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    ymaps.ready(init);
+    function init() {
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 7,
+            controls: []
+        });
+        var myMap = new ymaps.Map("map-1", {
+            center: [55.76, 37.64],
+            zoom: 7,
+            controls: []
+        });
+        var myMap = new ymaps.Map("map-2", {
+            center: [55.76, 37.64],
+            zoom: 7,
+            controls: []
+        });
+    }
+    
     </script>
 </body>
 </html>
