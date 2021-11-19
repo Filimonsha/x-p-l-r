@@ -3,9 +3,11 @@ document.addEventListener("DOMContentLoaded",()=>{
         element.addEventListener('click',(event)=>{
             event.__isOnClick=true;
             
-            document.querySelector('.routes__element_active').classList.remove('routes__element_active_onClick')
-            document.querySelectorAll('.routes__element_unactive').forEach((listElement=>{
-                listElement.classList.remove('display_none');
+            document.querySelectorAll('.routes__element_active').forEach((activeElement)=>{
+                activeElement.classList.remove('routes__element_active_onClick')
+            })
+            document.querySelectorAll('.routes__element_unactive').forEach((unActiveElement=>{
+                unActiveElement.classList.remove('display_none');
 
             }))
 
